@@ -1,6 +1,6 @@
 # Algorithms
 
-[How to use] (HowToUse.md)
+[How to use](HowToUse.md)
 
 Lab 5
 
