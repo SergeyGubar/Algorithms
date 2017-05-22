@@ -32,15 +32,22 @@ Tasks:
    Write a function that reconstructs a correct maxheap. 
    Print the array before the operation and after it.
 
+   [SOLUTION](Task%204/Program.cs)
+
 5. Given a maxheap stored in an array. 
    Convert it into a minheap. 
    Pint the array before the operation and after it.
+   
+   [SOLUTION](Task%205/Program.cs)
    
 6. Write a quicksort function that calls the function insertion sort for sorting sublists of the size less than 10. 
    In main():
    - create int L[100] initialize it by random numbers, copy L into int L1[100]
    - sort L by your combined quicksort, measure the time of execution, print sorted array L
    - process L1 by an ordinary quicksort, measure the time, print sorted L1. 
+
+   [SOLUTION](Task%206/Program.cs)
+
 
 7. Create a hash table of size 100 to keep integer keys. Resolve collisions by chaining. Define some hash function.
    In main():
