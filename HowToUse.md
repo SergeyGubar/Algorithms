@@ -1,4 +1,4 @@
-#How to use
+# How to use
 
 Step 1.
 Copy this repository to your computer.
