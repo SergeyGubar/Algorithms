@@ -82,15 +82,18 @@ Tasks:
     Starting from some vertex, visit each vertex in depth-first sequence and print their numbers. 
     
    [SOLUTION](Task%2010/GraphUtils.java)
+
  
 11. Specify a non-directed non-complete graph of n vertices by an adjacency matrix. 
     Fill the matrix by random numbers. 
     Assign colors to its vertices. 
    
    [SOLUTION](Task%2011/GraphUtils.java)
+
      
 12. Specify a non-directed non-complete graph of n vertices by an adjacency matrix. 
     Fill the matrix by random numbers. 
     Starting from some vertex, visit each vertex in breadth-first sequence and print their numbers.
     
    [SOLUTION](Task%2012/GraphUtils.java)
+   
