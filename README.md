@@ -54,6 +54,9 @@ Tasks:
    - Enter 60 random numbers (0 < number < 450) into the table. Count collisions. Print linked lists. 
    - Enter 90 random numbers (0 < number < 450) into the table. Count collisions. Print linked lists.
 
+   [SOLUTION](Task%207/Program.cs)
+
+
 8. Create a hash table of size 100 to keep integer keys. Resolve collisions by rehashing. Define some hash function and rehash function.
    In main():
    - Enter 60 random numbers (0 < number < 450) into the table. Count collisions. Print linked lists.
