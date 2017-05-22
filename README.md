@@ -18,7 +18,11 @@ Tasks:
    - merge them
    - print the result. 
 
+   [SOLUTION](Task%201/Program.cs)
+   
 2. Create a linked unsorted list, print it, sort it by bubble sort, print the result.
+   
+   [SOLUTION](Task%202/Program.cs)
 
 3. Given an array of integer numbers. 
    Its two adjacent sections (from index F1 to L1 and from index L1+1 to L2) are sorted in ascending order. 
@@ -26,6 +30,8 @@ Tasks:
    It is necessary to merge them in ascending order into positions from F1 to L2 
    without using an extra array (only 1 extra variable is allowed). 
    Print array after merging.
+   
+   [SOLUTION](Task%203/Program.cs)
 
 4. Given a maxheap of k elements stored in an array of n elements.  
    One more element is added to maxheap.
