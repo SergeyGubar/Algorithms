@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab5ALGS
-{
     class Program
     {
         static void Main(string[] args)
@@ -35,19 +33,25 @@ namespace Lab5ALGS
             //L1 - конец первой отсортированной части
             //L1 + 1 - начало второй
             //L2 - конец второй
+            //проходимся по правой части
             for (int i = L1 + 1; i <= L2; i++)
             {
+                //по левой
                 for (int j = F1; j <= L1; j++)
                 {
+                    //если нашли место, куда вставить
                     if(arr[i] < arr[j])
                     {
-                        
+                        //сохраняем значение элемента, который будем вставлять
                         int temp = arr[i];
+                        //сдивагаем все элементы от конца отсортированной части до индекса, куда будем вставлять на 1 вправо
                         for (int k = L1; k >= j; k--)
                         {
                             arr[k + 1] = arr[k];
                         }
+                        //вставляем наш элемент
                         arr[j] = temp;
+                        //меняем границы отсортированной части
                         F1++;
                         L1++;
                         i++;
@@ -69,4 +73,4 @@ namespace Lab5ALGS
             Console.WriteLine();
         }
     }
-}
+

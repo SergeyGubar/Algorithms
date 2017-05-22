@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab5ALGS
-{
+
     class Program
     {
         static void Main(string[] args)
@@ -39,4 +38,89 @@ namespace Lab5ALGS
         }
 
     }
-}
+    public class Node
+    {
+        public int Data { get; set; }
+        public Node Next { get; set; }
+
+        public Node(int data)
+        {
+            Data = data;
+            Next = null;
+        }
+        public Node(int data, Node next)
+        {
+            Data = data;
+            Next = next;
+        }
+    }
+    public class LinkedSortedList
+    {
+        public Node HeadNode;
+
+        public LinkedSortedList(Node headNode)
+        {
+            HeadNode = headNode;
+        }
+
+        public LinkedSortedList()
+        {
+        }
+
+        public bool IsEmpty()
+        {
+            return HeadNode == null;
+        }
+
+        public void AddItem(int data)
+        {
+            if (IsEmpty())
+            {
+                HeadNode = new Node(data);
+            }
+            else if (data < HeadNode.Data)
+            {
+                Node node = new Node(data);
+                node.Next = HeadNode;
+                HeadNode = node;
+            }
+            else
+            {
+                Node current = HeadNode;
+                while (current.Next != null && data > current.Next.Data)
+                {
+                    current = current.Next;
+                }
+                Node newNode = new Node(data);
+                newNode.Next = current.Next;
+                current.Next = newNode;
+            }
+        }
+
+        public void Print()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("List is empty, nothing to print :(");
+            }
+            Node current = HeadNode;
+            while (current != null)
+            {
+                Console.Write($"{current.Data}->");
+                current = current.Next;
+            }
+            Console.WriteLine();
+        }
+        public void Merge(LinkedSortedList anotherList)
+        {
+            Node currNode = anotherList.HeadNode;
+            while (currNode != null)
+            {
+                this.AddItem(currNode.Data);
+                currNode = currNode.Next;
+            }
+        }
+
+    }
+
+
