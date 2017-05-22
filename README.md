@@ -77,6 +77,9 @@ Tasks:
    - sort L by your combined mergeksort, measure the time of execution, print sorted array L
    - process L1 by an ordinary mergesort, measure the time, print sorted L1. 
 
+   [SOLUTION](Task%209/Program.cs)
+
+
 10. Specify a non-directed non-complete graph of n vertices by an adjacency matrix. 
     Fill the matrix by random numbers. 
     Starting from some vertex, visit each vertex in depth-first sequence and print their numbers. 
