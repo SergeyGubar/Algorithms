@@ -1,5 +1,7 @@
 # Algorithms
-AaDS
+
+[How to use] (HowToUse.md)
+
 Lab 5
 
 Tasks:
